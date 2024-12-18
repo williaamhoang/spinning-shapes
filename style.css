@@ -1,0 +1,72 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #00FF00; /* Green Text */
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    height: 70%;
+    border: 2px solid #00FF00;
+    padding: 10px;
+    background-color: black;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.folder {
+    font-weight: bold;
+    color: #00FF00;
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+.dash {
+    margin-right: 5px;
+}
+
+.highlight {
+    background-color: #00FF00;
+    color: black;
+    padding: 0 5px;
+}
+
+#mini-terminal {
+    width: 60%;
+    height: 40%;
+    border: 2px solid #00FF00;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    padding: 10px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
